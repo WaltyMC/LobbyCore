@@ -10,6 +10,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 class Core extends PluginBase implements Listener {
   
   public function onEnable(){
+    @mkdir($this->getDataFolder());
     $this->getLogger()->info("Plugin Enable!");
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
   }
