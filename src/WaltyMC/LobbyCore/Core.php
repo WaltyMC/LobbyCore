@@ -22,6 +22,12 @@ class Core extends PluginBase implements Listener {
     $config = new Config($this->getDataFolder()."config.yml", Config::YAML);
     $event->setJoinMessage(str_replace("{player}", $player->getName(), $config->get("join-message"));
   }
+  
+  public function onQuit(PlayerQuitEvent $event){
+    $player = $event->getPlayer();
+    $config = new Config($this->getDataFolder()."config.yml", Config::YAML);
+    $event->setQuitMessage(str_replace("{player}", $player->getName(), $config->get("exit-message"));
+  }
 
 
 }
