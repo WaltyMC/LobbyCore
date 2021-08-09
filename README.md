@@ -1,0 +1,2 @@
+# LobbyCore
+Basic LobbyCore
