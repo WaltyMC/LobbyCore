@@ -16,6 +16,7 @@ class Core extends PluginBase implements Listener {
   }
   
   public function onJoin(PlayerJoinEvent $event){
+    $player = $event->getPlayer();
     $config = new Config($this->getDataFolder()."config.yml", Config::YAML);
   }
 
