@@ -1,2 +1,10 @@
 # LobbyCore
-Basic LobbyCore
+
+**Information**
+
+*Commands:*
+
+-/server
+
+-/ranks
+
