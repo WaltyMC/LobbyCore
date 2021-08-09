@@ -11,6 +11,8 @@ class Core extends PluginBase implements Listener {
   
   public function onEnable(){
     @mkdir($this->getDataFolder());
+    $config = new Config($this->getDataFolder()."config.yml", Config::YAML);
+    $config->save();
     $this->getLogger()->info("Plugin Enable!");
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
   }
