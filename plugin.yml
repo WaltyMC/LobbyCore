@@ -1,0 +1,11 @@
+name: LobbyCore
+main: WaltyMC\LobbyCore\Core
+version: 1.0
+api: 3.0.0
+author: WaltyMC
+
+commands:
+  server:
+    description: "displays information about the server"
+  ranks:
+    description: "displays information about the ranks"
